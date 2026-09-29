@@ -1,0 +1,21 @@
+Periplus is a one-book reading log. You put a book on the shelf, open a voyage with a finish day, and log the pages you read so a single route line advances towards that day. It is for readers who want schedule slip shown as a curl off the true bearing, not a percentage bar or a shelf of genres.
+
+• One cyanotype route on the map for the open voyage
+• Catalogue of books on this device
+• Title search, including Open Library results
+• ISBN scan or typed ISBN digits
+• Manual Enter a book / Save book when a lookup misses or omits pages
+• Open a voyage with a Finish day
+• Log today's pages as a leg
+• Same-day legs stack; today's total is shown on the map dock
+• Idle days curl the route off True bearing. Curl is shown in degrees, capped at forty-five
+• Set finish day when the curl is at the cap
+• Buoys at quartile crossings, listed in Stats
+• Landfall when the last page is logged and the curl is already zero
+• Finish the book logs the remaining pages in one tap
+• Stats for Landfalls, Legs, Set marks, Buoys, and Recalibrations
+• Replay introduction
+• Confirmed Delete the route
+• Contact
+
+Books, voyages, legs, buoys, set marks, and landfalls stay on this device. Portrait only, on iPhone and iPad. Dark appearance only.

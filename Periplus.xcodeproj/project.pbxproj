@@ -1,0 +1,703 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		00746FE308956DFA312EDE78 /* DesignTokens.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEC9621E76132FB904CDBA01 /* DesignTokens.swift */; };
+		06953BFB40BC1369BF933E71 /* PeriplusApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F98A4FF39CDB2E3E4DDB0DD /* PeriplusApp.swift */; };
+		07D85166E62EC1E3704914C3 /* IsbnScanSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72A6120FEAE89D798A802658 /* IsbnScanSheet.swift */; };
+		1052BD01625B3EDEDF1C1509 /* PeriplusTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F61D7F11DE7AEF5C77566DB1 /* PeriplusTests.swift */; };
+		1236280954E972645D9C0FCD /* CatalogueSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0E8B276CB839EE27F409684 /* CatalogueSheet.swift */; };
+		1476F93AC62C511EB4959903 /* CyanotypeScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = F98444ADAD00FF1E84452778 /* CyanotypeScene.swift */; };
+		2B64DDE3A1885943BDA74DAB /* ExpeditionFold.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DF64D606E30F30CD68AFCD9 /* ExpeditionFold.swift */; };
+		2F0BBFC36F68741C2AC0B388 /* RouteButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD5AC9029579DCEB2E4F3C9D /* RouteButton.swift */; };
+		3350883B93CEFC50A92E6460 /* PeriplusStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BFEA9DF6C045161D5268B04 /* PeriplusStore.swift */; };
+		4793DF8B18CAE0CF21CA0323 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C35A50A9A1209BC98EC63FD2 /* Assets.xcassets */; };
+		4A5614940BDBD6B6DC9706A9 /* PeriplusSnapshot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86D7C22C3C9FAD644D1161A5 /* PeriplusSnapshot.swift */; };
+		50A8470AD0CA205DDDAF463F /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 52F729BD3CF8BFEF3F0387A8 /* Alamofire */; };
+		51B6A02D6B516E7B9AEA653D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FDDEAE35AABBC88A356F27B /* AppDelegate.swift */; };
+		603C9DC2AA9BEA64AC6217DF /* AppsFlyerLib-Static in Frameworks */ = {isa = PBXBuildFile; productRef = 8F715F7DF97C8E1DA913CD0D /* AppsFlyerLib-Static */; };
+		6B3560987A40161E89DA8EF2 /* RouteCanvas.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A8CD314CED8729264C33199 /* RouteCanvas.swift */; };
+		709F8DF908FA55D709421AFA /* CsvStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = C00F86AFBBD5BE8C10CB5C78 /* CsvStore.swift */; };
+		742858D6B7159A0B7F63B743 /* APIConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BC199DCE14FAB6C040C533B /* APIConfig.swift */; };
+		78E0EF394C22B98C2BF3143B /* ExpeditionSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 985CB269F3198A3E47D42591 /* ExpeditionSheet.swift */; };
+		7DBED0CBDE4CC6040E1A3E73 /* TitleSearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 944D414ECF29D57684E7F7B0 /* TitleSearch.swift */; };
+		7EBCC4809900763F390A062E /* StatsSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DE4AD45363E9970FC00183C /* StatsSheet.swift */; };
+		88B2FB16AE7114E66CB13D51 /* SettingsSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 102C58155F812BCB70F6737B /* SettingsSheet.swift */; };
+		9663761B143B295955FA1935 /* DayKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C2DEB2E2C17E60C339360A1 /* DayKey.swift */; };
+		9683A47042D475C84C101705 /* MapScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92B697F57252A78533918393 /* MapScreen.swift */; };
+		9DA4E3DAC1BB648C154964E5 /* Leg.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4350EE341DB4642D0AAEE2C0 /* Leg.swift */; };
+		A570F712C768D58669384E73 /* SetMark.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5E34A92F55CFDFDC0CC0DD0 /* SetMark.swift */; };
+		A8C1F1DCD81C9D90D49F8418 /* RouteProjection.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC68D2BEFA7C42D3E0A9140C /* RouteProjection.swift */; };
+		AF3592739C175652FC138BA5 /* Landfall.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5909BC5B453C97C6551A37B /* Landfall.swift */; };
+		B61E5AEA3B9F6D39220EEBCA /* Volume.swift in Sources */ = {isa = PBXBuildFile; fileRef = C035BB73BA979BB8F937041B /* Volume.swift */; };
+		CD53F06C30CC9D2354D114AA /* DemoSeed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2719F2873BCFAA4CBF4F65E4 /* DemoSeed.swift */; };
+		D3FC320569368C99ABA696D7 /* LogLeg.swift in Sources */ = {isa = PBXBuildFile; fileRef = D744A1CE4EEA53211E8D7CD4 /* LogLeg.swift */; };
+		D9FD975EFFA766CFFB4AD230 /* ReviewLaunch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525BFDD25F520AA4DD0A6C88 /* ReviewLaunch.swift */; };
+		DA576170520CD8EDCBA2D611 /* Buoy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F8F5103B117577F4C835BFC /* Buoy.swift */; };
+		E3A4561F56A390C6BBA90123 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C4268FF8A722645B9BF509B /* ContentView.swift */; };
+		EA25DB536211F0CEC3769014 /* RouteMeasure.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3BAF07CF564CA28A0A91962 /* RouteMeasure.swift */; };
+		F07A74DC47EB86CC092ABDEA /* RouteShell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57116A8F4841841B2C9C1147 /* RouteShell.swift */; };
+		F7D23A18D46676B9C0226C64 /* Expedition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88B39F1923DE71A371B74181 /* Expedition.swift */; };
+		F90551EABCF9C6114103EC76 /* OpenLibraryClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43E6F0661B844E0007412D42 /* OpenLibraryClient.swift */; };
+		FE0674B6C7A8286610454640 /* OnboardingFlow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BF2E256547E5998678758B5 /* OnboardingFlow.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B0D937C49FC1CFB91BB68BF7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3FC579CF8DBE7D582D5622D5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B1EFFECE554D63887831D811;
+			remoteInfo = Periplus;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0BFEA9DF6C045161D5268B04 /* PeriplusStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeriplusStore.swift; sourceTree = "<group>"; };
+		102C58155F812BCB70F6737B /* SettingsSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsSheet.swift; sourceTree = "<group>"; };
+		1FDDEAE35AABBC88A356F27B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		2719F2873BCFAA4CBF4F65E4 /* DemoSeed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoSeed.swift; sourceTree = "<group>"; };
+		2BC199DCE14FAB6C040C533B /* APIConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIConfig.swift; sourceTree = "<group>"; };
+		4350EE341DB4642D0AAEE2C0 /* Leg.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Leg.swift; sourceTree = "<group>"; };
+		43E6F0661B844E0007412D42 /* OpenLibraryClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenLibraryClient.swift; sourceTree = "<group>"; };
+		4F8F5103B117577F4C835BFC /* Buoy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Buoy.swift; sourceTree = "<group>"; };
+		519476E4C9A6FBDA8C760728 /* Periplus.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = Periplus.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		525BFDD25F520AA4DD0A6C88 /* ReviewLaunch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewLaunch.swift; sourceTree = "<group>"; };
+		57116A8F4841841B2C9C1147 /* RouteShell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouteShell.swift; sourceTree = "<group>"; };
+		5BF2E256547E5998678758B5 /* OnboardingFlow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingFlow.swift; sourceTree = "<group>"; };
+		5DE4AD45363E9970FC00183C /* StatsSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatsSheet.swift; sourceTree = "<group>"; };
+		615D30C5E14AD6F6398FE9BA /* PeriplusTests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = PeriplusTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6C4268FF8A722645B9BF509B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		6DF64D606E30F30CD68AFCD9 /* ExpeditionFold.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpeditionFold.swift; sourceTree = "<group>"; };
+		72A6120FEAE89D798A802658 /* IsbnScanSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IsbnScanSheet.swift; sourceTree = "<group>"; };
+		86D7C22C3C9FAD644D1161A5 /* PeriplusSnapshot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeriplusSnapshot.swift; sourceTree = "<group>"; };
+		88B39F1923DE71A371B74181 /* Expedition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Expedition.swift; sourceTree = "<group>"; };
+		8A8CD314CED8729264C33199 /* RouteCanvas.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouteCanvas.swift; sourceTree = "<group>"; };
+		8C2DEB2E2C17E60C339360A1 /* DayKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayKey.swift; sourceTree = "<group>"; };
+		92B697F57252A78533918393 /* MapScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapScreen.swift; sourceTree = "<group>"; };
+		944D414ECF29D57684E7F7B0 /* TitleSearch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleSearch.swift; sourceTree = "<group>"; };
+		985CB269F3198A3E47D42591 /* ExpeditionSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpeditionSheet.swift; sourceTree = "<group>"; };
+		9F98A4FF39CDB2E3E4DDB0DD /* PeriplusApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeriplusApp.swift; sourceTree = "<group>"; };
+		A0E8B276CB839EE27F409684 /* CatalogueSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatalogueSheet.swift; sourceTree = "<group>"; };
+		C00F86AFBBD5BE8C10CB5C78 /* CsvStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CsvStore.swift; sourceTree = "<group>"; };
+		C035BB73BA979BB8F937041B /* Volume.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Volume.swift; sourceTree = "<group>"; };
+		C35A50A9A1209BC98EC63FD2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C3BAF07CF564CA28A0A91962 /* RouteMeasure.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouteMeasure.swift; sourceTree = "<group>"; };
+		CD5AC9029579DCEB2E4F3C9D /* RouteButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouteButton.swift; sourceTree = "<group>"; };
+		D5E34A92F55CFDFDC0CC0DD0 /* SetMark.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetMark.swift; sourceTree = "<group>"; };
+		D744A1CE4EEA53211E8D7CD4 /* LogLeg.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogLeg.swift; sourceTree = "<group>"; };
+		EC68D2BEFA7C42D3E0A9140C /* RouteProjection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouteProjection.swift; sourceTree = "<group>"; };
+		F5909BC5B453C97C6551A37B /* Landfall.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Landfall.swift; sourceTree = "<group>"; };
+		F61D7F11DE7AEF5C77566DB1 /* PeriplusTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeriplusTests.swift; sourceTree = "<group>"; };
+		F98444ADAD00FF1E84452778 /* CyanotypeScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CyanotypeScene.swift; sourceTree = "<group>"; };
+		FEC9621E76132FB904CDBA01 /* DesignTokens.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignTokens.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4E946F9E5CC150F8CE091E82 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				50A8470AD0CA205DDDAF463F /* Alamofire in Frameworks */,
+				603C9DC2AA9BEA64AC6217DF /* AppsFlyerLib-Static in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3FFBDAEC3969898DCFEADA6E /* Volume */ = {
+			isa = PBXGroup;
+			children = (
+				A0E8B276CB839EE27F409684 /* CatalogueSheet.swift */,
+				72A6120FEAE89D798A802658 /* IsbnScanSheet.swift */,
+				43E6F0661B844E0007412D42 /* OpenLibraryClient.swift */,
+				944D414ECF29D57684E7F7B0 /* TitleSearch.swift */,
+				C035BB73BA979BB8F937041B /* Volume.swift */,
+			);
+			path = Volume;
+			sourceTree = "<group>";
+		};
+		58551390243E878BAC17DCB1 /* Chrome */ = {
+			isa = PBXGroup;
+			children = (
+				CD5AC9029579DCEB2E4F3C9D /* RouteButton.swift */,
+				C3BAF07CF564CA28A0A91962 /* RouteMeasure.swift */,
+			);
+			path = Chrome;
+			sourceTree = "<group>";
+		};
+		6ADE9E4C337A472B3E148538 /* Landfall */ = {
+			isa = PBXGroup;
+			children = (
+				F5909BC5B453C97C6551A37B /* Landfall.swift */,
+				5DE4AD45363E9970FC00183C /* StatsSheet.swift */,
+			);
+			path = Landfall;
+			sourceTree = "<group>";
+		};
+		746D8EB051FA9912D2A1731B /* Leg */ = {
+			isa = PBXGroup;
+			children = (
+				4350EE341DB4642D0AAEE2C0 /* Leg.swift */,
+				D744A1CE4EEA53211E8D7CD4 /* LogLeg.swift */,
+			);
+			path = Leg;
+			sourceTree = "<group>";
+		};
+		7887EC65FC9571619D677523 /* Periplus */ = {
+			isa = PBXGroup;
+			children = (
+				2BC199DCE14FAB6C040C533B /* APIConfig.swift */,
+				1FDDEAE35AABBC88A356F27B /* AppDelegate.swift */,
+				C35A50A9A1209BC98EC63FD2 /* Assets.xcassets */,
+				6C4268FF8A722645B9BF509B /* ContentView.swift */,
+				FEC9621E76132FB904CDBA01 /* DesignTokens.swift */,
+				9F98A4FF39CDB2E3E4DDB0DD /* PeriplusApp.swift */,
+				8BA383960C61DA365103D651 /* Buoy */,
+				58551390243E878BAC17DCB1 /* Chrome */,
+				79A732A4CAB7415A119D9DE8 /* Expedition */,
+				6ADE9E4C337A472B3E148538 /* Landfall */,
+				746D8EB051FA9912D2A1731B /* Leg */,
+				86AFF5120C7C8CF5180D8335 /* Map */,
+				A2377BFC2EA5B76A5CCE9C5C /* Periplus */,
+				D9E059065ED447844FF267CB /* SetMark */,
+				3FFBDAEC3969898DCFEADA6E /* Volume */,
+			);
+			path = Periplus;
+			sourceTree = "<group>";
+		};
+		79A732A4CAB7415A119D9DE8 /* Expedition */ = {
+			isa = PBXGroup;
+			children = (
+				88B39F1923DE71A371B74181 /* Expedition.swift */,
+				6DF64D606E30F30CD68AFCD9 /* ExpeditionFold.swift */,
+				985CB269F3198A3E47D42591 /* ExpeditionSheet.swift */,
+			);
+			path = Expedition;
+			sourceTree = "<group>";
+		};
+		86AFF5120C7C8CF5180D8335 /* Map */ = {
+			isa = PBXGroup;
+			children = (
+				F98444ADAD00FF1E84452778 /* CyanotypeScene.swift */,
+				92B697F57252A78533918393 /* MapScreen.swift */,
+				8A8CD314CED8729264C33199 /* RouteCanvas.swift */,
+			);
+			path = Map;
+			sourceTree = "<group>";
+		};
+		8B7CF9F64373576D003289BD /* PeriplusTests */ = {
+			isa = PBXGroup;
+			children = (
+				F61D7F11DE7AEF5C77566DB1 /* PeriplusTests.swift */,
+			);
+			path = PeriplusTests;
+			sourceTree = "<group>";
+		};
+		8BA383960C61DA365103D651 /* Buoy */ = {
+			isa = PBXGroup;
+			children = (
+				4F8F5103B117577F4C835BFC /* Buoy.swift */,
+			);
+			path = Buoy;
+			sourceTree = "<group>";
+		};
+		A2377BFC2EA5B76A5CCE9C5C /* Periplus */ = {
+			isa = PBXGroup;
+			children = (
+				C00F86AFBBD5BE8C10CB5C78 /* CsvStore.swift */,
+				8C2DEB2E2C17E60C339360A1 /* DayKey.swift */,
+				2719F2873BCFAA4CBF4F65E4 /* DemoSeed.swift */,
+				5BF2E256547E5998678758B5 /* OnboardingFlow.swift */,
+				86D7C22C3C9FAD644D1161A5 /* PeriplusSnapshot.swift */,
+				0BFEA9DF6C045161D5268B04 /* PeriplusStore.swift */,
+				525BFDD25F520AA4DD0A6C88 /* ReviewLaunch.swift */,
+				EC68D2BEFA7C42D3E0A9140C /* RouteProjection.swift */,
+				57116A8F4841841B2C9C1147 /* RouteShell.swift */,
+				102C58155F812BCB70F6737B /* SettingsSheet.swift */,
+			);
+			path = Periplus;
+			sourceTree = "<group>";
+		};
+		D5F35CC307D10529D94B995D = {
+			isa = PBXGroup;
+			children = (
+				7887EC65FC9571619D677523 /* Periplus */,
+				8B7CF9F64373576D003289BD /* PeriplusTests */,
+				E8B6C0DF3B040A7A4A599A6B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D9E059065ED447844FF267CB /* SetMark */ = {
+			isa = PBXGroup;
+			children = (
+				D5E34A92F55CFDFDC0CC0DD0 /* SetMark.swift */,
+			);
+			path = SetMark;
+			sourceTree = "<group>";
+		};
+		E8B6C0DF3B040A7A4A599A6B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				519476E4C9A6FBDA8C760728 /* Periplus.app */,
+				615D30C5E14AD6F6398FE9BA /* PeriplusTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B1EFFECE554D63887831D811 /* Periplus */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1B0ADB49DE3581C524FD1B91 /* Build configuration list for PBXNativeTarget "Periplus" */;
+			buildPhases = (
+				222AA9C12C7E182BFC51F5A7 /* Sources */,
+				0FDB854B6BFA3CF642A1017C /* Resources */,
+				4E946F9E5CC150F8CE091E82 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Periplus;
+			packageProductDependencies = (
+				52F729BD3CF8BFEF3F0387A8 /* Alamofire */,
+				8F715F7DF97C8E1DA913CD0D /* AppsFlyerLib-Static */,
+			);
+			productName = Periplus;
+			productReference = 519476E4C9A6FBDA8C760728 /* Periplus.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FE46F0306A4CD285C1577C6C /* PeriplusTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 81872ED4F72F67B928F84FC1 /* Build configuration list for PBXNativeTarget "PeriplusTests" */;
+			buildPhases = (
+				2980F7F4BBD0E37185133D4B /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2C265E3C52A056069FC6FD7E /* PBXTargetDependency */,
+			);
+			name = PeriplusTests;
+			packageProductDependencies = (
+			);
+			productName = PeriplusTests;
+			productReference = 615D30C5E14AD6F6398FE9BA /* PeriplusTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3FC579CF8DBE7D582D5622D5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					B1EFFECE554D63887831D811 = {
+						ProvisioningStyle = Automatic;
+					};
+					FE46F0306A4CD285C1577C6C = {
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 11725987603B1E9E3B7081C8 /* Build configuration list for PBXProject "Periplus" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = D5F35CC307D10529D94B995D;
+			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				251169022131B424EB9BE9C7 /* XCRemoteSwiftPackageReference "Alamofire" */,
+				D5322B2AECCD6B76B89CCA9C /* XCRemoteSwiftPackageReference "AppsFlyerFramework-Static" */,
+			);
+			preferredProjectObjectVersion = 77;
+			productRefGroup = E8B6C0DF3B040A7A4A599A6B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B1EFFECE554D63887831D811 /* Periplus */,
+				FE46F0306A4CD285C1577C6C /* PeriplusTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0FDB854B6BFA3CF642A1017C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4793DF8B18CAE0CF21CA0323 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		222AA9C12C7E182BFC51F5A7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				742858D6B7159A0B7F63B743 /* APIConfig.swift in Sources */,
+				51B6A02D6B516E7B9AEA653D /* AppDelegate.swift in Sources */,
+				DA576170520CD8EDCBA2D611 /* Buoy.swift in Sources */,
+				1236280954E972645D9C0FCD /* CatalogueSheet.swift in Sources */,
+				E3A4561F56A390C6BBA90123 /* ContentView.swift in Sources */,
+				709F8DF908FA55D709421AFA /* CsvStore.swift in Sources */,
+				1476F93AC62C511EB4959903 /* CyanotypeScene.swift in Sources */,
+				9663761B143B295955FA1935 /* DayKey.swift in Sources */,
+				CD53F06C30CC9D2354D114AA /* DemoSeed.swift in Sources */,
+				00746FE308956DFA312EDE78 /* DesignTokens.swift in Sources */,
+				F7D23A18D46676B9C0226C64 /* Expedition.swift in Sources */,
+				2B64DDE3A1885943BDA74DAB /* ExpeditionFold.swift in Sources */,
+				78E0EF394C22B98C2BF3143B /* ExpeditionSheet.swift in Sources */,
+				07D85166E62EC1E3704914C3 /* IsbnScanSheet.swift in Sources */,
+				AF3592739C175652FC138BA5 /* Landfall.swift in Sources */,
+				9DA4E3DAC1BB648C154964E5 /* Leg.swift in Sources */,
+				D3FC320569368C99ABA696D7 /* LogLeg.swift in Sources */,
+				9683A47042D475C84C101705 /* MapScreen.swift in Sources */,
+				FE0674B6C7A8286610454640 /* OnboardingFlow.swift in Sources */,
+				F90551EABCF9C6114103EC76 /* OpenLibraryClient.swift in Sources */,
+				06953BFB40BC1369BF933E71 /* PeriplusApp.swift in Sources */,
+				4A5614940BDBD6B6DC9706A9 /* PeriplusSnapshot.swift in Sources */,
+				3350883B93CEFC50A92E6460 /* PeriplusStore.swift in Sources */,
+				D9FD975EFFA766CFFB4AD230 /* ReviewLaunch.swift in Sources */,
+				2F0BBFC36F68741C2AC0B388 /* RouteButton.swift in Sources */,
+				6B3560987A40161E89DA8EF2 /* RouteCanvas.swift in Sources */,
+				EA25DB536211F0CEC3769014 /* RouteMeasure.swift in Sources */,
+				A8C1F1DCD81C9D90D49F8418 /* RouteProjection.swift in Sources */,
+				F07A74DC47EB86CC092ABDEA /* RouteShell.swift in Sources */,
+				A570F712C768D58669384E73 /* SetMark.swift in Sources */,
+				88B2FB16AE7114E66CB13D51 /* SettingsSheet.swift in Sources */,
+				7EBCC4809900763F390A062E /* StatsSheet.swift in Sources */,
+				7DBED0CBDE4CC6040E1A3E73 /* TitleSearch.swift in Sources */,
+				B61E5AEA3B9F6D39220EEBCA /* Volume.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2980F7F4BBD0E37185133D4B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1052BD01625B3EDEDF1C1509 /* PeriplusTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2C265E3C52A056069FC6FD7E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B1EFFECE554D63887831D811 /* Periplus */;
+			targetProxy = B0D937C49FC1CFB91BB68BF7 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		285257EEB0B5E192840884F7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_STRICT_CONCURRENCY = complete;
+				SWIFT_VERSION = 6.2;
+			};
+			name = Release;
+		};
+		35D8E0628B3722841F6DC88D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Support/Periplus-Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = Reelora;
+				INFOPLIST_KEY_ITSAppUsesNonExemptEncryption = NO;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.books";
+				INFOPLIST_KEY_NSCameraUsageDescription = "Periplus uses the camera to read the ISBN barcode printed on a book so that volume can be added to the catalogue on this device.";
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UIRequiresFullScreen = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UIUserInterfaceStyle = Dark;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.periplus.route;
+				PRODUCT_NAME = Periplus;
+				SDKROOT = iphoneos;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_STRICT_CONCURRENCY = complete;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		846D9E74D0839741F10D1012 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.periplus.route.tests;
+				SDKROOT = iphoneos;
+				SWIFT_STRICT_CONCURRENCY = complete;
+				SWIFT_VERSION = 6.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Periplus.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Periplus";
+			};
+			name = Release;
+		};
+		9DE100DA4A69522F26D3ECC8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.periplus.route.tests;
+				SDKROOT = iphoneos;
+				SWIFT_STRICT_CONCURRENCY = complete;
+				SWIFT_VERSION = 6.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Periplus.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Periplus";
+			};
+			name = Debug;
+		};
+		AC5CCC9D2182046AC5A65F35 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_STRICT_CONCURRENCY = complete;
+				SWIFT_VERSION = 6.2;
+			};
+			name = Debug;
+		};
+		E1817B834FECA85168B2A394 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Support/Periplus-Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = Reelora;
+				INFOPLIST_KEY_ITSAppUsesNonExemptEncryption = NO;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.books";
+				INFOPLIST_KEY_NSCameraUsageDescription = "Periplus uses the camera to read the ISBN barcode printed on a book so that volume can be added to the catalogue on this device.";
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UIRequiresFullScreen = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UIUserInterfaceStyle = Dark;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.periplus.route;
+				PRODUCT_NAME = Periplus;
+				SDKROOT = iphoneos;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_STRICT_CONCURRENCY = complete;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		11725987603B1E9E3B7081C8 /* Build configuration list for PBXProject "Periplus" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AC5CCC9D2182046AC5A65F35 /* Debug */,
+				285257EEB0B5E192840884F7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		1B0ADB49DE3581C524FD1B91 /* Build configuration list for PBXNativeTarget "Periplus" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E1817B834FECA85168B2A394 /* Debug */,
+				35D8E0628B3722841F6DC88D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		81872ED4F72F67B928F84FC1 /* Build configuration list for PBXNativeTarget "PeriplusTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9DE100DA4A69522F26D3ECC8 /* Debug */,
+				846D9E74D0839741F10D1012 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		251169022131B424EB9BE9C7 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/wrandecima-bit/Alamofire";
+			requirement = {
+				kind = revision;
+				revision = 7fdd403089757be2ce6991b287c7bef612c8bd04;
+			};
+		};
+		D5322B2AECCD6B76B89CCA9C /* XCRemoteSwiftPackageReference "AppsFlyerFramework-Static" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/AppsFlyerSDK/AppsFlyerFramework-Static";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.17.9;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		52F729BD3CF8BFEF3F0387A8 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 251169022131B424EB9BE9C7 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+		8F715F7DF97C8E1DA913CD0D /* AppsFlyerLib-Static */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D5322B2AECCD6B76B89CCA9C /* XCRemoteSwiftPackageReference "AppsFlyerFramework-Static" */;
+			productName = "AppsFlyerLib-Static";
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 3FC579CF8DBE7D582D5622D5 /* Project object */;
+}

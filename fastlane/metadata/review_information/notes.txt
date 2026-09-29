@@ -1,0 +1,27 @@
+Camera permission appears only after Continue on the ISBN sheet, and only if the reader uses the finder instead of typing digits. Before the system camera ask, the sheet shows The next step asks the system for the camera. then Continue. Continue is the only control that leads to the system camera alert. The alert is the only place that says Allow. The usage string is Periplus uses the camera to read the ISBN barcode printed on a book so that volume can be added to the catalogue on this device. No other permission is asked.
+
+There is no login, no in-app purchase, no user-generated content, no account deletion flow, and no App Tracking Transparency prompt.
+
+Periplus is a one-book reading log. You put a book on the shelf, open a voyage with a finish day, and log the pages you read so a single route line advances toward that day. It is for readers who want schedule slip shown as a curl off the true bearing, not a percentage bar or a shelf of genres.
+
+No credentials or demo account are needed. Cold launch is a dark system launch screen with no wordmark. On a physical device the first screen is the introduction. Skip is at the top trailing corner and ends the introduction on any page. 1. A route for one volume. Periplus keeps a cyanotype line toward the day you mean to finish the book. Next. 2. Log the pages you read today. Each log advances the route. A day with no log curls the line off the true bearing. Next. 3. Set when the curl reaches its cap. Set moves landfall forward so the drift returns to zero, and the next log is allowed. Continue. Skip and Continue both go to the map. The introduction does not ask for a name, account, or permission. On the Simulator only, the first run can skip the introduction and open Northwater Atlas by I. Marlow. A physical device does not get that starter voyage. Later launches open the map with the last saved shelf, voyage, legs, and curl.
+
+The map stays on screen. Toolbar: Catalogue, Voyage, Stats, Settings. Sheets swipe down to close.
+
+Empty map: No voyage yet. Open a book. That opens Catalogue. Search a title, Scan ISBN, or Enter a book. Save book needs Title and Total pages of at least 1. ISBN: Point the camera at the ISBN barcode, or type the digits. Continue leads to the system camera alert. Or type ISBN digits and Use these digits. Simulator only: Simulator samples, Use 9780141439518, Use 9780000000002.
+
+Tap Voyage. If the shelf is empty: Open the catalogue. Moored: Pick a book and the day you intend to finish it. That day is the finish day. Choose Volume, set Finish day (not today or earlier; first value is twenty-one days from now), tap Open voyage. Success: The expedition is open from today. Tap Log pages.
+
+Map: Today's pages default 1. Fewer pages, More pages, Log 1 pages. Idle days curl this line off the true bearing. At forty-five degrees tap Set finish day. On Voyage, Finish the book logs remaining pages.
+
+Stats: No landfalls yet when empty; then Landfalls, Legs, Set marks, Buoys, Recalibrations. Settings: Replay introduction, Delete the route, Contact (spoken Contact Periplus).
+
+Books, voyages, legs, buoys, set marks, and landfalls stay on this device. Title and ISBN lookup can use Open Library; a saved book remains available when the network does not. Contact opens the support page.
+
+The interface is English. Dates and page counts follow the device locale and calendar. There is no region switch and no country lock in the app.
+
+No licence or regulated-industry paperwork applies.
+
+The app is a personal log only and gives no recommendations. No health, medical, or product-health information.
+
+The ISBN sheet reads ISBN barcodes. It also accepts a QR code when that code contains an 8-to-14-digit run, and typed digits of that length. It is looking for the printed ISBN, not a store QR campaign or a boarding pass. A scannable QR (qr-code.png) is attached to this review. It encodes 9780141439518. Simulator users type those digits.

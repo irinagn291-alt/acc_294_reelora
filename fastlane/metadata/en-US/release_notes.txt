@@ -1,0 +1,11 @@
+Version 1.0 is the first release of Periplus, a one-book reading log.
+
+• Introduction with Skip, Next, and Continue
+• Map with True bearing, Curl, Log, and Set finish day
+• Catalogue with Search a title, Open Library, Scan ISBN, and Enter a book
+• ISBN finder, ISBN digits, and Simulator samples
+• Voyage with Finish day, Open voyage, and Finish the book
+• Stats for Landfalls, Legs, Set marks, Buoys, and Recalibrations
+• Settings with Replay introduction, Delete the route, and Contact
+
+Portrait only, on iPhone and iPad. Dark appearance only. Minimum iOS 17.0.
