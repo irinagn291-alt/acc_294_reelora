@@ -1,4 +1,4 @@
-<!-- gf-brief source=5f8daa0428f721845f38658d7a63dd3040b195541f7d83685b53e1b8b0856856 written=2026-09-29T18:09:42+03:00 -->
+<!-- gf-brief source=5863f8d0cec1c94980f516b1373e917888695973e9ab3ff855b974ab136a792b written=2026-09-29T18:17:04+03:00 -->
 # Periplus
 
 ## What it is
