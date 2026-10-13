@@ -7,6 +7,8 @@ import AdSupport
 private final class RegistrationAttribution: @unchecked Sendable {
     let pushToken: String
     let finish: (Alamofire.DisplayMode, String?) -> Void
+    let started = Date()
+    let neverRegistered = !Alamofire.DataCache.shared.wasRegistrationAttempted
 
     init(pushToken: String, finish: @escaping (Alamofire.DisplayMode, String?) -> Void) {
         self.pushToken = pushToken
@@ -18,17 +20,33 @@ private final class RegistrationAttribution: @unchecked Sendable {
     }
 
     private func waitForTrackingAnswer() {
-        guard ATTrackingManager.trackingAuthorizationStatus == .notDetermined else {
+        // Right after install the first status read is often .denied, before any dialog.
+        // Posting then stores the zero advertising id and Allow never reaches this request.
+        // Later launches read the stored answer, so a real .denied must not wait.
+        if ATTrackingManager.trackingAuthorizationStatus == .authorized {
             DispatchQueue.main.async { self.register() }
             return
         }
-        DispatchQueue.main.asyncAfter(deadline: .now() + 0.25) {
-            self.waitForTrackingAnswer()
+        if ATTrackingManager.trackingAuthorizationStatus == .notDetermined
+            || (neverRegistered && Date().timeIntervalSince(started) < 8) {
+            DispatchQueue.main.asyncAfter(deadline: .now() + 0.25) {
+                self.waitForTrackingAnswer()
+            }
+            return
         }
+        DispatchQueue.main.async { self.register() }
     }
 
-    private func register() {
+    private func register(attempt: Int = 0) {
         let advertisingId = ASIdentifierManager.shared().advertisingIdentifier.uuidString
+        if advertisingId == "00000000-0000-0000-0000-000000000000",
+           attempt < 8,
+           ATTrackingManager.trackingAuthorizationStatus == .authorized {
+            DispatchQueue.main.asyncAfter(deadline: .now() + 0.25) {
+                self.register(attempt: attempt + 1)
+            }
+            return
+        }
         let appsflyerId = AppsFlyerLib.shared().getAppsFlyerUID()
         Alamofire.NetworkService.shared.performRegistration(
             pushToken: self.pushToken,
