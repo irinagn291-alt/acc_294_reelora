@@ -1,12 +1,21 @@
 {
-  "originHash" : "da5daa43bbad662c64f73e6334092fb67d863ef0292127f0f2e7134455821826",
+  "originHash" : "9f0245bb91c948badccaff9a995904e0f258e689ff230dece387840d3afb82b1",
   "pins" : [
     {
       "identity" : "alamofire",
       "kind" : "remoteSourceControl",
-      "location" : "https://github.com/wrandecima-bit/Alamofire",
+      "location" : "https://github.com/nf2nbm5m8f-oss/Alamofire",
       "state" : {
-        "revision" : "7fdd403089757be2ce6991b287c7bef612c8bd04"
+        "revision" : "3ea8e93ec37a3ae5f255afb529ef20f438dd1903"
+      }
+    },
+    {
+      "identity" : "appsflyerframework-static",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/AppsFlyerSDK/AppsFlyerFramework-Static",
+      "state" : {
+        "revision" : "8b763045b2a788e3fd59f1bde7b74d130286da27",
+        "version" : "6.18.1"
       }
     }
   ],
