@@ -2,10 +2,15 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>AdAttributionKit</key>
+	<dict>
+		<key>AttributionCopyEndpoint</key>
+		<string>https://appsflyer-skadnetwork.com/</string>
+	</dict>
+	<key>AttributionCopyEndpoint</key>
+	<string>https://appsflyer-skadnetwork.com/</string>
 	<key>NSAdvertisingAttributionReportEndpoint</key>
 	<string>https://appsflyer-skadnetwork.com/</string>
-	<key>NSUserTrackingUsageDescription</key>
-	<string>We use this identifier to personalize your experience and measure app performance.</string>
 	<key>SKAdNetworkItems</key>
 	<array>
 		<dict>
@@ -521,12 +526,5 @@
 			<string>zq492l623r.skadnetwork</string>
 		</dict>
 	</array>
-	<key>AttributionCopyEndpoint</key>
-	<string>https://appsflyer-skadnetwork.com/</string>
-	<key>AdAttributionKit</key>
-	<dict>
-		<key>AttributionCopyEndpoint</key>
-		<string>https://appsflyer-skadnetwork.com/</string>
-	</dict>
 </dict>
 </plist>
