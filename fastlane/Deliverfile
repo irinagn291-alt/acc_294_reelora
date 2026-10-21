@@ -24,11 +24,16 @@ submission_information({
 
 # The binary is uploaded by the archive workflow, so deliver only carries the metadata.
 skip_binary_upload true
-skip_screenshots false
+skip_screenshots true
 screenshots_path("./fastlane/screenshots")
+# Gem on Bitrise is fastlane 2.232. Its language list predates bn-BD, gu-IN,
+# kn-IN and the other 2026 App Store locales, so a real directory name fails
+# before upload. The folder is still the App Store code.
+ignore_language_directory_validation true
 overwrite_screenshots true
 screenshot_processing_timeout 600
-skip_app_version_update true
+skip_app_version_update false
+app_version "1.1"
 
 submit_for_review false
 automatic_release true
