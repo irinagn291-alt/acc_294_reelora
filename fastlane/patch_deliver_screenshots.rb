@@ -1,3 +1,21 @@
+# fastlane 2.232's language list stops at the 2020 set. It has no sl-SI,
+# bn-BD, ur-PK, or the India locales Apple added later. Deliverfile sets
+# ignore_language_directory_validation so an unknown folder does not abort
+# the lane — Loader still drops that folder, so the locale is created on
+# App Store Connect and then left with no metadata and no screenshots.
+# Register the codes before screenshots and metadata are collected.
+if defined?(Deliver::Languages::ALL_LANGUAGES)
+  store_locales = %w[
+    bn-BD gu-IN kn-IN ml-IN mr-IN or-IN pa-IN sl-SI ta-IN te-IN ur-PK
+  ]
+  current = Deliver::Languages::ALL_LANGUAGES
+  missing = store_locales.reject { |code| current.any? { |have| have.to_s.casecmp?(code) } }
+  unless missing.empty?
+    Deliver::Languages.send(:remove_const, :ALL_LANGUAGES)
+    Deliver::Languages.const_set(:ALL_LANGUAGES, current.to_a + missing)
+  end
+end
+
 # fastlane#30094 — gem on Bitrise (2.232–2.238) re-uploads the set because
 # Apple has not published sourceFileChecksum yet. Official fix is merged to
 # master, not released. Same wait + delete-before-retry as PR 30150.

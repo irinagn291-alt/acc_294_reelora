@@ -26,14 +26,14 @@ submission_information({
 skip_binary_upload true
 skip_screenshots true
 screenshots_path("./fastlane/screenshots")
-# Gem on Bitrise is fastlane 2.232. Its language list predates bn-BD, gu-IN,
-# kn-IN and the other 2026 App Store locales, so a real directory name fails
-# before upload. The folder is still the App Store code.
+# Gem on Bitrise is fastlane 2.232. Its language list has no sl-SI, bn-BD, or
+# the other later App Store codes. The flag only stops the hard fail; the
+# patch below adds those codes so the folders are uploaded.
 ignore_language_directory_validation true
 overwrite_screenshots true
 screenshot_processing_timeout 600
 skip_app_version_update false
-app_version "1.1"
+app_version "1.2"
 
 submit_for_review false
 automatic_release true
@@ -43,8 +43,31 @@ run_precheck_before_submit false
 # API key auth cannot validate in-app purchases in precheck.
 precheck_include_in_app_purchases false
 
-_qr = File.expand_path("metadata/review_information/qr-code.png", __dir__)
+# Deliverfile is eval'd, so __dir__ is nil and a path next to this file is
+# never found. configfile_path is the Deliverfile fastlane just loaded.
+_here = if respond_to?(:configfile_path) && configfile_path
+  File.dirname(configfile_path.to_s)
+else
+  File.expand_path("fastlane")
+end
+
+# fastlane 2.232's list stops before sl-SI. This eval runs after Deliver is
+# loaded and before metadata and screenshots are collected. The ignore flag
+# above does not upload a folder the list does not know.
+if defined?(Deliver::Languages::ALL_LANGUAGES)
+  store_locales = %w[
+    bn-BD gu-IN kn-IN ml-IN mr-IN or-IN pa-IN sl-SI ta-IN te-IN ur-PK
+  ]
+  current = Deliver::Languages::ALL_LANGUAGES
+  missing = store_locales.reject { |code| current.any? { |have| have.to_s.casecmp?(code) } }
+  unless missing.empty?
+    Deliver::Languages.send(:remove_const, :ALL_LANGUAGES)
+    Deliver::Languages.const_set(:ALL_LANGUAGES, current.to_a + missing)
+  end
+end
+
+_qr = File.join(_here, "metadata/review_information/qr-code.png")
 app_review_attachment_file(_qr) if File.file?(_qr)
 
-_patch = File.expand_path("patch_deliver_screenshots.rb", __dir__)
+_patch = File.join(_here, "patch_deliver_screenshots.rb")
 require _patch if File.file?(_patch)

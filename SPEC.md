@@ -346,8 +346,9 @@ Every item here is a defect if it is missing. Do not treat this as advice.
 
 - Respect safe areas on every screen. Nothing sits under the notch, the Dynamic
   Island or the home indicator.
-- The app is portrait-only on iPhone. Lock it in the Info settings and do not
-  write rotation-dependent layout.
+- iPhone allows portrait, landscape left, and landscape right. iPad allows all
+  four orientations. Keep both lists in the Info settings, and let a rotated
+  screen scroll instead of clipping.
 - No layout shift when asynchronous data arrives. Reserve the final size up
   front, or use a redacted placeholder of the same dimensions.
 - Long product names must truncate gracefully, never push a number off screen.
@@ -582,7 +583,7 @@ The app must be submittable without further work.
 - `NSCameraUsageDescription` written specifically for this app. Generic strings
   get rejected.
 - `LSApplicationCategoryType` of `public.app-category.healthcare-fitness`.
-- Portrait only, iPhone and iPad (`TARGETED_DEVICE_FAMILY = "1,2"`).
+- iPhone: portrait, landscape left, landscape right. iPad: all four orientations (`TARGETED_DEVICE_FAMILY = "1,2"`).
 - No account, no sign-in, no delete-account flow, no in-app purchase, no ads, no
   user-generated content, and therefore no report or block UI.
 - App Tracking Transparency is never invoked.
@@ -619,8 +620,8 @@ Project settings that follow from the above:
 
 ```yaml
 INFOPLIST_KEY_UIUserInterfaceStyle: Dark
-INFOPLIST_KEY_UISupportedInterfaceOrientations: UIInterfaceOrientationPortrait
-INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad: UIInterfaceOrientationPortrait
+INFOPLIST_KEY_UISupportedInterfaceOrientations: UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight
+INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad: UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight
 INFOPLIST_KEY_UIRequiresFullScreen: YES
 INFOPLIST_KEY_ITSAppUsesNonExemptEncryption: NO
 INFOPLIST_KEY_LSApplicationCategoryType: public.app-category.books
